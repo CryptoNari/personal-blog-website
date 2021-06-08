@@ -1,3 +1,12 @@
 @import "layout.css";
 @import "elements.css";
 @import "typo.css";
+
+.nav-link{
+    padding: 30px
+}
+
+.nav-icon {
+    height: 4em;
+    width: auto;
+}

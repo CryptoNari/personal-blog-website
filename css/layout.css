@@ -1,3 +1,17 @@
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-container li{
+    text-align: right;
+
+}
+
 .home-layout {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
