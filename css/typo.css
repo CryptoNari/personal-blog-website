@@ -1,19 +1,45 @@
 @import url("https:fonts.googleapis.com/css?family=Open+Sans");
 @import url("https:fonts.googleapis.com/css?family=Shadows+Into+Light");
 
-p{
-    font-family: "Open Sans", serif;
+.nav-link{
+    text-decoration: none;
+    font-family: "Shadows Into Light", serif;
+    text-align: center;
+    color: black;
 }
 
 h1{
     font-family: "Shadows Into Light", serif;
 }
 
-.nav-link{
-    text-decoration: none;
-    font-family: "Shadows Into Light", serif;
-    text-align: center;
-    font-size: 3em;
-    font-weight: 400;
-    color: black;
+
+p{
+    font-family: "Open Sans", serif;
+}
+
+
+@media screen and (maxmin-width: 600px) {
+    .nav-link {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    h1 {
+        font-size:  3em;
+    }
+    .nav-link {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    h1 {
+        font-size: 4.5em;
+    }
+
+    .nav-link {
+        font-size: 3.5em;
+        font-weight: 400;
 }

@@ -9,7 +9,10 @@
 
 .nav-container li{
     text-align: right;
+}
 
+.header-container{
+    position: relative;
 }
 
 .home-layout {
@@ -25,6 +28,7 @@
 
 .navbar {
     grid-area: 1 / 1 / 2 / 5;
+    padding-right: 30px;
 }
 
 .header-area {
