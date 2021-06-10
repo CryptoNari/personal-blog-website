@@ -109,7 +109,6 @@ main{
 
 .blog-card:hover{
     transform: scale(1.02);
-    transition: all .2 linear;
 }
 
 .blog-img {
@@ -127,11 +126,15 @@ main{
 
 .blog-info {
     height: auto;
-    width: 280px;
+    width: 260px;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.blog-info p{
+    font-size: .9em;
 }
 
 .blog-author {
@@ -179,7 +182,7 @@ main{
     .blog-card {
         display: flex;
         flex-direction: row;
-        width: 580px;
+        width: 560px;
     }
 
     .blog-img img{
@@ -209,7 +212,7 @@ main{
 
     .blog-section {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(575px, 1fr));
     }
 
     .nav-logo img{
