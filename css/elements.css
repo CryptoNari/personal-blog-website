@@ -18,7 +18,32 @@ header {
 }
 
 footer {
+    background-color: var(--feldgrau);
+}
+
+button {
+ background-color: var(--feldgrau);
+ border: .5px solid blacl;
+ border-radius: 25%;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.about-section {
     background-color: var(--nickel);
+}
+
+p{
+    color: var(--text-color);
 }
 
 img {
@@ -27,12 +52,15 @@ img {
     object-fit: cover;
 }
 
-h1{
+h1,
+h2,
+h3{
     margin-block-start: 0;
     margin-block-end: 0;
+    font-family: "Shadows Into Light", serif;
+    color: black;
 }
 
-h2{
-    margin-block-start: 0;
-    margin-block-end: 0;
+h3 {
+    font-size: 1.4em;
 }

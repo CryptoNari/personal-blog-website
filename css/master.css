@@ -12,7 +12,7 @@
 }
 
 :root{
-    --baby-blue-eyes: #b0ccfeff;
+    --text-color: #262e2b;
     --cultured: #fafafaff;
     --rich-black-fogra-39: #0d0f13ff;
     --nickel: #736d60ff;
@@ -23,7 +23,8 @@ body{
     font-size: 16px;
 }
 
-nav {
+nav,
+footer {
     display: flex;
     justify-content: space-between;
     padding :2vw;
@@ -80,10 +81,12 @@ main{
     color: var(--baby-blue-eyes)
 }
 
-.blog-section {
+.blog-section,
+.about-section {
     display: block;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 35px;
 }
 
 .blog-card {
@@ -94,6 +97,19 @@ main{
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+}
+
+.about-content {
+    width: 280px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-card:hover{
+    transform: scale(1.02);
+    transition: all .2 linear;
 }
 
 .blog-img {
@@ -105,10 +121,58 @@ main{
     border-radius: 20px 20px 0px 0px;
 }
 
+.about-img img{
+    border-radius: 25%;
+}
+
 .blog-info {
     height: auto;
     width: 280px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-author {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.blog-author img{
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 1em;
+}
+
+.blog-author p span{
+    font-size: 60%;
+
+}
+
+.follow-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.follow-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 50px;
+
+}
+
+.follow-socials img{
+    margin-right: 20px;
+    width: 50px;
 }
 
 @media(min-width: 600px){
@@ -158,20 +222,4 @@ main{
         top: 4px;
         left: 8px;
     }
-
-}
-/*alt*/
-
-.heading {
-    position: absolute;
-    top: -10px;
-    left: 10px;
-}
-
-.main-heading{
-    text-align: center;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    margin-left: 10vw;
-    margin-right: 10vw;
 }
