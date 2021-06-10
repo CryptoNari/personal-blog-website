@@ -5,10 +5,68 @@
 /* .nav-link{
     padding: 30px
 } */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --baby-blue-eyes: #b0ccfeff;
+    --cultured: #fafafaff;
+    --rich-black-fogra-39: #0d0f13ff;
+    --nickel: #736d60ff;
+    --feldgrau: #5c6f68ff;
+}
+
+body{
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding :2vw;
+}
+
+main{
+    background-color: var(--nickel);
+}
+
+.nav-logo img{
+    height: 4.5em;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.nav-links li {
+    padding-left: 30px;
+    padding-top: 25px;
+}
 
 .nav-icon {
-    height: 4em;
+    height: 4.5em;
     width: auto;
+    padding-top: 10px;
+}
+
+.header-container{
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.header-container h1{
+    position: absolute;
+    top: -8px;
+    left: 8px;
 }
 
 .header-image{
@@ -16,12 +74,104 @@
     max-width: 100%;
 }
 
+.header-container p{
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--baby-blue-eyes)
+}
+
+.blog-section {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.blog-card {
+    background-color: var(--nickel);
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 9px 4px rgb(0 0 0 / 58%);
+    width: 280px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-img {
+    width: 280px;
+    height: 200px;
+}
+
+.blog-img img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.blog-info {
+    height: auto;
+    width: 280px;
+    padding: 15px;
+}
+
+@media(min-width: 600px){
+    .blog-card {
+        display: flex;
+        flex-direction: row;
+        width: 580px;
+    }
+
+    .blog-img img{
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        font-size: 2.5em;
+        padding-right: 20px;
+    }
+
+    .nav-links li {
+        padding-left: 30px;
+    }
+
+    .header-container h1{
+        position: absolute;
+        font-size: 3em;
+        top: -1px;
+}
+
+@media(min-width: 900px){
+    .nav-links {
+        font-size: 3.5em;
+    }
+
+    .blog-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    }
+
+    .nav-logo img{
+        height: 5.5em;
+        width: auto;
+    }
+
+    .header-container h1{
+        font-size: 4em;
+        top: 4px;
+        left: 8px;
+    }
+
+}
+/*alt*/
+
 .heading {
     position: absolute;
     top: -10px;
     left: 10px;
 }
 
-p.cite{
-    font-size: 2em;
+.main-heading{
+    text-align: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
