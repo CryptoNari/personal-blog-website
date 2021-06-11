@@ -1,24 +1,7 @@
-/* nav,
-header,
-main,
-footer{
-    border: 1px solid red;
-} */
+
 body{
     margin: 0;
     background-color: var(--feldgrau);
-}
-
-nav {
-    background-color: var(--feldgrau);
-}
-
-header {
-    
-}
-
-article {
-    padding-top: 20px;
 }
 
 footer {
@@ -46,7 +29,7 @@ a {
     background-color: var(--nickel);
 }
 
-p{
+p {
     color: var(--text-color);
 }
 
@@ -58,9 +41,7 @@ img {
 
 h1,
 h2,
-h3{
-    margin-block-start: 0;
-    margin-block-end: 0;
+h3 {
     font-family: "Shadows Into Light", serif;
     color: black;
 }

@@ -35,14 +35,14 @@
 
 .text-image img{
     width: 98%;
-    border-radius: 20%;
+    border-radius: 10%;
     align-self: center;
     float:none;
 }
 
 @media(min-width: 600px) and (max-width: 900px){
     .text-image img{
-        width: 50%;
+        width: 30%;
         float: right;
     }
 
