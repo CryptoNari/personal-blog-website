@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
-    background-color: var(--nickel);
+    background-color: var(--dogbrown);
 }
 
 .blogpost-header img{
@@ -11,7 +11,7 @@
 }
 
 .blogpost-follow {
-        background-color: var(--nickel);
+        background-color: var(--dogbrown);
 }
 
 .blog-content h2{

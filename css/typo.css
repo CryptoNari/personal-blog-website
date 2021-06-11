@@ -23,8 +23,6 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 width: 100vw;
 height: 72vw;
-margin-bottom: 10%;
-border-bottom: 1px solid black;
 }
 
 .background { grid-area: 1 / 1 / 6 / 8; }

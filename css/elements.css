@@ -1,15 +1,15 @@
 
 body{
     margin: 0;
-    background-color: var(--feldgrau);
+    background-color: var(--snow);
 }
 
 footer {
-    background-color: var(--feldgrau);
+    background-color: var(--snow);
 }
 
 button {
- background-color: var(--feldgrau);
+ background-color: var(--snow);
  border: .5px solid blacl;
  border-radius: 25%;
  color: white;
@@ -26,7 +26,11 @@ a {
 }
 
 .about-section {
-    background-color: var(--nickel);
+    background-color: var(--dogbrown);
+}
+
+.about-section h2 {
+    margin-bottom: 10px;
 }
 
 p {

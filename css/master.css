@@ -15,8 +15,8 @@
     --text-color: #262e2b;
     --cultured: #fafafaff;
     --rich-black-fogra-39: #0d0f13ff;
-    --nickel: #827c74;
-    --feldgrau: #8694a3;
+    --dogbrown: #827c74;
+    --snow: #8694a3;
 }
 
 body{
@@ -35,7 +35,7 @@ footer {
 }
 
 main{
-    background-color: var(--nickel);
+    background-color: var(--dogbrown);
 }
 
 .nav-logo img{
@@ -57,14 +57,22 @@ main{
     font-size: 5vw;
 }
 
-.nav-links li a:hover{
-    background-color: var(--nickel);
+a h2:hover {
+    color: var(--dogbrown);
 }
 
 .nav-icon {
     height: 4.5em;
     width: auto;
     padding-top: 10px;
+}
+
+.blog-heading {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 90vw;
+    margin: 25px;
+    text-align: center;
 }
 
 .header-container{
@@ -89,7 +97,7 @@ main{
     color: var(--baby-blue-eyes)
 }
 
-.blog-section,
+.blog-articles,
 .about-section {
     display: block;
     padding-left: 15px;
@@ -98,21 +106,14 @@ main{
 }
 
 .blog-card {
-    background-color: var(--nickel);
+    background-color: var(--dogbrown);
     border-radius: 20px;
     box-shadow: 0px 0px 9px 4px rgb(0 0 0 / 58%);
     width: 280px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-}
-
-.about-content {
-    width: 280px;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .blog-card:hover{
@@ -128,8 +129,28 @@ main{
     border-radius: 20px 20px 0px 0px;
 }
 
+.about-content {
+    margin-bottom: 25px;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .about-img img{
     border-radius: 25%;
+    width: 100%;
+}
+
+.about-img {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.about-info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .blog-info {
@@ -193,6 +214,19 @@ main{
 }
 
 @media(min-width: 600px){
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-img {
+        width: 38%;
+    }
+
+    .about-info {
+        width: 58%
+    }
+
     .blog-card {
         display: flex;
         flex-direction: row;
@@ -209,7 +243,6 @@ main{
 
     .nav-links {
         flex-direction: row;
-        font-size: 2.5em;
         padding-right: 20px;
     }
 
@@ -224,7 +257,7 @@ main{
         font-size: 45px;
     }
 
-    .blog-section {
+    .blog-articles {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(575px, 1fr));
     }
