@@ -278,4 +278,7 @@ a h2:hover {
     .header-logo h1 {
         font-size: 3.2em;
     }
+
+    #blogpost-nav {
+        height: 9em;
 }
