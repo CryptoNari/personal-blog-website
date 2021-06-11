@@ -1,3 +1,13 @@
+#blogpost-nav {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100vw;
+    height: 17vw;
+}
+
 .blogpost-header {
     display: flex;
     flex-direction: column-reverse;
@@ -14,7 +24,7 @@
     align-self: center;
 }
 
-.blogpost-header img{
+.blogpost-header img {
     height: 40vh;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
@@ -25,7 +35,7 @@
         padding: 20px;
 }
 
-.blog-content h2{
+.blog-content h2 {
     text-align: center;
     padding-bottom: 30px;
 }
@@ -34,11 +44,11 @@
     line-height: 2em;
     padding-bottom: 50px;
     padding-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-.blog-list ul{
+.blog-list ul {
     list-style-type: circle;
     padding-left: 50px;
 }
@@ -47,48 +57,50 @@
     align-content: center;
 }
 
-.text-image img{
+.text-image img {
     width: 98%;
     border-radius: 10%;
     align-self: center;
     float:none;
 }
 
-@media(min-width: 600px) and (max-width: 900px){
-    .text-image img{
+@media (min-width: 600px) and (max-width: 900px) {
+    .blogpost-header {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .blogpost-header img {
+        height: 60%;
+        width: 50%;
+        align-self: center;
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    .blogpost-caption {
+        width:50%;
+        align-self: center;
+    }
+
+    .text-image img {
         width: 30%;
         float: right;
     }
-
-    .blogpost-header {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-    }
-
-    .blogpost-caption {
-        width:50%;
-        align-self: center;
-    }
-
-    .blogpost-header img{
-        height: 60%;
-        width: 50%;
-        align-self: center;
-        border-radius: 00px 20px 20px 0px;
-    }
 }
 
-@media(min-width: 900px){
-    .text-image img{
-        width: 50%;
-        float: right;
-    }
-
+@media (min-width: 901px) {
     .blogpost-header {
         display: flex;
         flex-direction: row;
         text-align: center;
+    }
+
+    .blogpost-header img {
+        height: 60%;
+        width: 50%;
+        align-self: center;
+        border-radius: 0px 20px 20px 0px;
     }
 
     .blogpost-caption {
@@ -96,9 +108,8 @@
         align-self: center;
     }
 
-    .blogpost-header img{
-        height: 60%;
-        width: 50%;
-        align-self: center;
+    .text-image img {
+        width: 30%;
+        float: right;
     }
 }
