@@ -1,4 +1,4 @@
-@import "layout.css";
+@import "blogpost.css";
 @import "elements.css";
 @import "typo.css";
 
@@ -51,6 +51,10 @@ main{
 .nav-links li {
     padding-left: 30px;
     padding-top: 25px;
+}
+
+.nav-links li a:hover{
+    background-color: var(--nickel);
 }
 
 .nav-icon {
@@ -170,6 +174,7 @@ main{
     flex-direction: row;
     justify-content:space-between;
     height: 50px;
+    margin-bottom: 15px;
 
 }
 

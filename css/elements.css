@@ -14,7 +14,11 @@ nav {
 }
 
 header {
-    padding-bottom: 30px;
+    
+}
+
+article {
+    padding-top: 20px;
 }
 
 footer {
@@ -26,7 +30,7 @@ button {
  border: .5px solid blacl;
  border-radius: 25%;
  color: white;
- padding: 15px 32px;
+ padding: 10px 20px;
  text-align: center;
  display: inline-block;
  font-size: 16px;
