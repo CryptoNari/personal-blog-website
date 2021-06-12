@@ -1,17 +1,11 @@
 @import "sub.css";
 @import "elements.css";
-@import "typo.css";
+@import "grid.css";
 /* @import url("//fonts.googleapis.com/css?family=Open+Sans");
 @import url("//fonts.googleapis.com/css?family=Shadows+Into+Light"); */
 
 @import url("http://fonts.googleapis.com/css?family=Open+Sans");
 @import url("http://fonts.googleapis.com/css?family=Shadows+Into+Light");
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 :root {
     --text-color: #262e2b;
@@ -19,9 +13,10 @@
     --snow: #8694a3;
 }
 
-.nav-logo img {
-    height: 14.5vw;
-    width: auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .nav-links {

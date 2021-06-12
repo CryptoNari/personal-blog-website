@@ -35,11 +35,6 @@
         padding: 20px;
 }
 
-.blog-content h2 {
-    text-align: center;
-    padding-bottom: 30px;
-}
-
 .blog-content {
     line-height: 2em;
     padding-bottom: 50px;
@@ -48,13 +43,14 @@
     margin-right: 40px;
 }
 
+.blog-content h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
 .blog-list ul {
     list-style-type: circle;
     padding-left: 50px;
-}
-
-.text-image {
-    align-content: center;
 }
 
 .text-image img {
