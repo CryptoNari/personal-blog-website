@@ -217,6 +217,7 @@
         position: absolute;
         font-size: 3em;
         top: -1px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -249,4 +250,5 @@
 
     #blogpost-nav {
         height: 9em;
+    }
 }
