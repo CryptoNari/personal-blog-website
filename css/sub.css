@@ -53,29 +53,18 @@
     padding-left: 50px;
 }
 
-figure {
-    width: 98%;
-    border-radius: 10%;
-    align-self: center;
-}
-
-figcaption {
-    text-align: center;
-    font-size: .8em;
-    font-style: italic;
-}
-
 .radius {
     border-radius: 20px;
 }
 
-blockquote {
-    border-left: 3px solid var(--dogbrown);
-    margin-left: 25px;
-    padding-left: 20px;
-    margin-right: 25px;
-    font-style: italic;
-    color: var(--text-color)
+.underline {
+    text-decoration: underline;
+}
+
+figure {
+    width: 98%;
+    border-radius: 10%;
+    align-self: center;
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
@@ -100,6 +89,7 @@ blockquote {
     figure {
         width: 30%;
         float: right;
+        margin-left: 25px;
     }
 }
 
@@ -125,5 +115,6 @@ blockquote {
     figure {
         width: 30%;
         float: right;
+        margin-left: 25px;
     }
 }
