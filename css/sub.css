@@ -53,11 +53,29 @@
     padding-left: 50px;
 }
 
-.text-image img {
+figure {
     width: 98%;
     border-radius: 10%;
     align-self: center;
-    float:none;
+}
+
+figcaption {
+    text-align: center;
+    font-size: .8em;
+    font-style: italic;
+}
+
+.radius {
+    border-radius: 20px;
+}
+
+blockquote {
+    border-left: 3px solid var(--dogbrown);
+    margin-left: 25px;
+    padding-left: 20px;
+    margin-right: 25px;
+    font-style: italic;
+    color: var(--text-color)
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
@@ -79,7 +97,7 @@
         align-self: center;
     }
 
-    .text-image img {
+    figure {
         width: 30%;
         float: right;
     }
@@ -104,7 +122,7 @@
         align-self: center;
     }
 
-    .text-image img {
+    figure {
         width: 30%;
         float: right;
     }
